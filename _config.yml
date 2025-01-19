@@ -1,55 +1,75 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "hafizhnaufal.github.io" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-
 # Build settings
-theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.26.2" # Use this theme
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Site settings
+title: "Welcome to My Portfolio!"
+email: "hafizh.iman.naufal@gmail.com"
+baseurl: "/hafizhnaufal.github.io" # The subpath of your site, e.g. /blog
+url: "" # The base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+#github_username: jekyll
+
+# Enable sidebar on your site
+sidebar:
+  - nav
+
+# Defaults for different page types
+defaults:
+  - scope:
+      path: "" # Applies to all files
+    values:
+      sidebar: "nav"  # Enables sidebar globally
+      layout: "single"  # Use layout that supports sidebar
+      author_profile: true
+
+# Author Information
+author:
+  name: "Hafizh Iman Naufal"
+  avatar: "/assets/images/profile.jpeg"  # Change to your photo path
+  bio: "I am an **amazing** person." # Your brief bio (Markdown allowed)
+  location: "Somewhere"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/your-username"  # Replace with your GitHub
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/your-username"  # Replace with your LinkedIn
+    - label: "Upwork"
+      icon: "fab fa-fw fa-upwork"
+      url: "https://www.upwork.com/freelancers/~your-username"  # Replace with your Upwork profile
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:your-email@example.com"  # Replace with your email
+
+
+
+# Exclude unnecessary files and folders
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+
+# Other settings (Optional)
+# Enable this section if you want to customize the layout further
+# Uncomment and modify as needed
+# markdown: kramdown
+# permalink: /:categories/:title/
+# social_links: true
+
+# Language and Timezone settings (Optional)
+# locale: en
+# timezone: UTC
+
+# Uncomment the below line if you need a specific config for posts or other collections
+# collections:
+#   posts:
+#     output: true
+#     permalink: /:year/:month/:day/:title/
