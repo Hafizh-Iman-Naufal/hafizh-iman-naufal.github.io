@@ -27,7 +27,7 @@ defaults:
 
 # Author Information
 author:
-  name: "Hafizh Iman Naufal"
+  name: " "
   avatar: "/assets/images/profile.jpeg"  # Change to your photo path
   bio: "Data Engineer @NucleusBI" # Your brief bio (Markdown allowed)
   location: "Kuta, Bali, Indonesia"
