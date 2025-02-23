@@ -32,6 +32,9 @@ author:
   bio: "Data Engineer at NucleusBI" # Your brief bio (Markdown allowed)
   location: "Kuta, Bali, Indonesia"
   links:
+    - label: "Resume" 
+      icon: "fas fa-file-alt"
+      url: "https://assets.glints.com/resume/0c2829ccb70a91a9e166cb537260a25f.pdf"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Hafizh-Iman-Naufal"  # Replace with your GitHub
