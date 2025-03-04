@@ -34,7 +34,7 @@ author:
   links:
     - label: " Resume" 
       icon: "fas fa-file-alt"
-      url: "https://assets.glints.com/resume/0c2829ccb70a91a9e166cb537260a25f.pdf"
+      url: "https://assets.glints.com/resume/4350381ed598321ed5f6d424ae59d8ae.pdf"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Hafizh-Iman-Naufal"  # Replace with your GitHub
@@ -44,6 +44,9 @@ author:
     - label: "Upwork"
       icon: "fab fa-fw fa-upwork"
       url: "https://www.upwork.com/freelancers/~018220f9a8c039a4e8?viewMode=1"  # Replace with your Upwork profile
+    - label: "Hugging Face 🤗"
+      icon: "fas fa-fw fa-brain"  # You might need a different icon here
+      url: "https://huggingface.co/hafizh-iman-naufal"
     - label: "hafizh.iman.naufal@gmail.com"
       icon: "fas fa-fw fa-envelope"
       url: "hafizh.iman.naufal@gmail.com"  # Replace with your email
